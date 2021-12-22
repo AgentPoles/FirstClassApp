@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CFrameWork</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="startUp">Enter the desired name for this section or group</string>
+</resources>

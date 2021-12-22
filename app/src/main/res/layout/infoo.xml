@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/reala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/texty"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/darker_gray"
+        android:text="No rececent\n News or Information"/>
+<RelativeLayout
+    android:id="@+id/la"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:background="@color/colorTransparent"
+        android:id="@+id/jane"
+        android:src="@mipmap/realnews"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/iback"
+        android:textAppearance="@style/AlertDialog.AppCompat.Light"
+        android:text=" Your Information List"
+
+        android:id="@+id/rjane"
+        android:padding="2dp"
+        android:paddingLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/load"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+        android:layout_alignBottom="@+id/jane"
+        android:layout_toRightOf="@+id/jane"
+        android:text="."
+        android:textColor="@color/colorPrimary"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/loadb"
+        android:layout_marginLeft="3dp"
+        android:layout_alignBottom="@+id/jane"
+        android:layout_toRightOf="@+id/load"
+        android:text="."
+        android:textColor="@color/outline"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/loadc"
+        android:layout_marginLeft="3dp"
+        android:layout_alignBottom="@+id/jane"
+        android:layout_toRightOf="@+id/loadb"
+        android:text="."
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="50sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/refrensh"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="178dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Refresh"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:id="@+id/adde"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/refrensh"
+            android:layout_marginLeft="53dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="Add"
+            android:layout_marginBottom="20dp"
+            />
+
+    </RelativeLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/ard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ima"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_width="300dp"
+            android:backgroundTint="@color/background"
+            android:layout_height="100dp"
+            android:background="@android:drawable/picture_frame"
+            />
+        <ImageButton
+            android:id="@+id/uploadd"
+            android:src="@android:drawable/ic_menu_upload"
+            android:layout_below="@+id/ima"
+            android:layout_width="50dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/upo"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/ima"
+            android:layout_toLeftOf="@+id/uploadd"
+            android:text="upload picture\n concerning information\n(OPTIONAL)"
+            android:textColor="@color/brown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/lia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ima"
+            android:orientation="horizontal"
+            android:layout_marginTop="55dp">
+            <TextView
+                android:text="Title of\nInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_blue_dark"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="15dp"
+                />
+        <EditText
+            android:id="@+id/infotitle"
+            android:layout_marginRight="30dp"
+            android:background="@android:drawable/toast_frame"
+            android:backgroundTint="@android:color/darker_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:hint="Enter a title for the information"
+
+            />
+
+        </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/lib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lia"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+                <TextView
+                    android:id="@+id/bodifo"
+                    android:text="Body of\nInformation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_red_light"
+                    style="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="15dp"
+                    />
+                <EditText
+                    android:id="@+id/edi"
+                    android:layout_toRightOf="@+id/bodifo"
+                    android:layout_marginRight="0dp"
+                    android:background="@android:drawable/dialog_holo_dark_frame"
+                    android:backgroundTint="@android:color/darker_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:textColor="#000000"
+                    android:hint="Enter Information and  click on the Upload symbol to Upload document files"
+                    />
+                <ImageButton
+                    android:id="@+id/uploadds"
+                    android:src="@android:drawable/ic_menu_upload"
+                    android:layout_below="@+id/bodifo"
+                    android:layout_width="50dp"
+                    android:layout_marginLeft="37dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/upob"
+                    android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/lic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lib"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:id="@+id/textautho"
+                android:text="Authority  \n Behind \nInformation "
+                android:layout_width="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_green_dark"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="15dp"
+                />
+            <EditText
+                android:layout_toRightOf="@+id/textautho"
+                android:id="@+id/ediauthor"
+                android:layout_marginRight="30dp"
+                android:background="@android:drawable/toast_frame"
+                android:backgroundTint="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:hint="Who approved this Information?"
+                />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/infodone"
+            android:background="@drawable/bottonba"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="20dp"
+            android:text="Done!"
+            android:textColor="@color/white"
+            android:layout_below="@+id/lic"
+            android:layout_width="60dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    </ScrollView>
+    <ScrollView
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list"
+            android:background="@color/background"
+            android:layout_below="@+id/la"
+            android:scrollbars="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </ScrollView>
+
+    </FrameLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/faa"
+
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="170dp"
+        android:src="@android:drawable/stat_notify_sync_noanim"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/holo_blue_dark"
+        />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fac"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/faa"
+        android:layout_marginLeft="30dp"
+        android:src="@android:drawable/ic_menu_add"
+
+        android:layout_marginBottom="40dp"
+        />
+
+</RelativeLayout>

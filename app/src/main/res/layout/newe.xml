@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backi"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mycompany.myapp.cframework.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:id="@+id/startup"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_height="wrap_content"
+        android:text="neawe"
+        android:textSize="23sp"/>
+    <ImageView
+        android:id="@+id/grp"
+        android:padding="0dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:background="@drawable/backi"
+        android:src="@mipmap/koala"
+        android:layout_below="@+id/startup"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <ImageButton
+        android:id="@+id/upload"
+        android:src="@android:drawable/ic_menu_upload"
+        android:layout_below="@+id/grp"
+        android:layout_width="100dp"
+        android:background="@color/background"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/grp"
+        android:paddingTop="15dp"
+        android:layout_toLeftOf="@+id/upload"
+        android:text="upload picture"
+        android:textColor="@color/brown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_margin="30dp"
+        android:layout_below="@+id/upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/doc"
+            android:background="@drawable/backi"
+            android:src="@android:drawable/ic_menu_agenda"
+            android:layout_below="@+id/startup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/grp"
+            android:paddingTop="9dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:text="load a document"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/docu"
+        android:layout_below="@+id/upload"
+        android:paddingTop="9dp"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:id="@+id/slides"
+        android:src="@android:drawable/arrow_up_float"
+        android:layout_width="30dp"
+        android:background="@color/outline"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="30dp" />
+    <ImageButton
+        android:id="@+id/today"
+        android:src="@android:drawable/ic_menu_today"
+        android:layout_width="wrap_content"
+        android:background="@color/outline"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_height="30dp" />
+
+
+</RelativeLayout>
